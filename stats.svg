@@ -1,0 +1,28 @@
+<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 26px 'Segoe UI', system-ui, sans-serif; fill: #00e5ff; }
+    .label { font: 18px 'Segoe UI', system-ui, sans-serif; fill: #ffffff; }
+    .value { font: bold 22px 'Segoe UI', system-ui, sans-serif; fill: #00e5ff; }
+    @keyframes glow {
+      0% { filter: drop-shadow(0 0 0px #00e5ff); }
+      50% { filter: drop-shadow(0 0 10px #00e5ff); }
+      100% { filter: drop-shadow(0 0 0px #00e5ff); }
+    }
+    .glow { animation: glow 2s infinite ease-in-out; }
+  </style>
+
+  <rect width="100%" height="200" rx="12" fill="#050816"></rect>
+
+  <text x="50%" y="40" text-anchor="middle" class="title glow">
+    OPERATION METRICS
+  </text>
+
+  <text x="20" y="90" class="label">Projects completed</text>
+  <text x="320" y="90" class="value">57</text>
+
+  <text x="20" y="130" class="label">Hours on code</text>
+  <text x="320" y="130" class="value">1500+</text>
+
+  <text x="20" y="170" class="label">Lines shipped</text>
+  <text x="320" y="170" class="value">250k+</text>
+</svg>
