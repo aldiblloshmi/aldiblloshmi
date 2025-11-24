@@ -1,24 +1,27 @@
-<br>
-<br>
+<!-- Animated Background Banner -->
+<p align="center">
+  <img src="https://aoble.net/wp-content/uploads/2021/04/aoble_logo_new.png" width="30%" />
+</p>
+
 <h1 align="center">Aldi Blloshmi</h1>
 <p align="center">High-Tech Developer • Builder • Creator</p>
 
 ---
 
-## 🚀 About Me
+## ⚡ About Me
 
-I build modern, efficient, and clean software with a high-tech feel.  
-Focused on backend systems, automation, and practical engineering.
+I build clean, efficient and modern software with a minimal, futuristic style.  
+Focused on backend systems, automation, and problem-solving.
 
-- Backend, APIs, performance  
-- Clean & minimal software architecture  
-- Long-term builder mindset  
-- Website → https://aoble.net  
-- Email → aldi@aoble.net
+- ⚙ Backend, APIs, automation  
+- 🧠 Clean architecture & simplicity  
+- 🚀 Long-term builder  
+- 🌐 Website → https://aoble.net  
+- 📬 Email → aldi@aoble.net  
 
 ---
 
-## 🔧 Tech Stack
+## 🔥 Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,python,php,nodejs,react,nextjs" height="50"/>
@@ -30,12 +33,11 @@ Focused on backend systems, automation, and practical engineering.
 
 ---
 
-## 📊 GitHub Analytics
+## 🚀 Custom Developer Stats (Animated)
 
-<div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=aldiblloshmi&show_icons=true&theme=transparent&hide_border=true"/>
-  <img height="150" src="https://github-readme-streak-stats.herokuapp.com?user=aldiblloshmi&theme=transparent&hide_border=true"/>
-</div>
+<p align="center">
+  <img src="./stats-panel.svg" width="80%" />
+</p>
 
 ---
 
