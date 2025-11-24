@@ -68,3 +68,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/SIGNAL-STABLE-00e5ff?style=flat-square&labelColor=050816&color=00e5ff" />
 </p>
+<p align="center">
+  <img src="./footer.svg" width="100%" />
+</p>
