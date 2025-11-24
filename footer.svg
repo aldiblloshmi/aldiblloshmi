@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="1200" height="160">
+
+  <defs>
+    <!-- background gradient -->
+    <linearGradient id="footerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00111c"></stop>
+      <stop offset="50%" stop-color="#002a4a"></stop>
+      <stop offset="100%" stop-color="#00111c"></stop>
+    </linearGradient>
+
+    <!-- neon gradient -->
+    <linearGradient id="footerNeon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"></stop>
+      <stop offset="100%" stop-color="#00ffb8"></stop>
+    </linearGradient>
+
+    <filter id="footerGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .bg {
+      fill: url(#footerBg);
+    }
+
+    .scan {
+      fill: none;
+      stroke: url(#footerNeon);
+      stroke-width: 2;
+      opacity: 0.8;
+      animation: scanMove 5s linear infinite;
+    }
+
+    .scan-soft {
+      fill: none;
+      stroke: #00e5ff33;
+      stroke-width: 1;
+    }
+
+    .hex {
+      fill: none;
+      stroke: #00e5ff;
+      stroke-width: 1;
+      opacity: 0.18;
+      animation: hexDrift 14s linear infinite;
+    }
+
+    .particle {
+      fill: #00e5ff;
+      opacity: 0;
+      animation: particleBlink 4s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) { animation-delay: 0s; }
+    .particle:nth-child(2) { animation-delay: 0.7s; }
+    .particle:nth-child(3) { animation-delay: 1.4s; }
+    .particle:nth-child(4) { animation-delay: 2.1s; }
+    .particle:nth-child(5) { animation-delay: 2.8s; }
+
+    .footer-text {
+      fill: #c9f9ff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    @keyframes scanMove {
+      0%   { transform: translateX(-200px); }
+      50%  { transform: translateX(0); }
+      100% { transform: translateX(200px); }
+    }
+
+    @keyframes hexDrift {
+      0%   { transform: translate(0, 0); }
+      50%  { transform: translate(40px, -10px); }
+      100% { transform: translate(-20px, -20px); }
+    }
+
+    @keyframes particleBlink {
+      0%, 100% { opacity: 0; transform: translateY(0); }
+      50%      { opacity: 1; transform: translateY(-6px); }
+    }
+  </style>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1200" height="160" class="bg"></rect>
+
+  <!-- soft top/bottom lines -->
+  <line x1="0" y1="20" x2="1200" y2="20" class="scan-soft"></line>
+  <line x1="0" y1="140" x2="1200" y2="140" class="scan-soft"></line>
+
+  <!-- animated scan line -->
+  <g filter="url(#footerGlow)">
+    <line x1="100" y1="80" x2="1100" y2="80" class="scan"></line>
+  </g>
+
+  <!-- few hex shapes -->
+  <g filter="url(#footerGlow)">
+    <polygon class="hex" points="140,40 170,55 170,85 140,100 110,85 110,55"></polygon>
+    <polygon class="hex" points="360,70 390,85 390,115 360,130 330,115 330,85"></polygon>
+    <polygon class="hex" points="680,45 710,60 710,90 680,105 650,90 650,60"></polygon>
+    <polygon class="hex" points="940,75 970,90 970,120 940,135 910,120 910,90"></polygon>
+  </g>
+
+  <!-- floating particles -->
+  <g filter="url(#footerGlow)">
+    <circle class="particle" cx="180" cy="115" r="2"></circle>
+    <circle class="particle" cx="420" cy="45" r="2"></circle>
+    <circle class="particle" cx="640" cy="115" r="2"></circle>
+    <circle class="particle" cx="880" cy="50" r="2"></circle>
+    <circle class="particle" cx="1060" cy="110" r="2"></circle>
+  </g>
+
+  <!-- center footer text -->
+  <g filter="url(#footerGlow)">
+    <text x="50%" y="118" text-anchor="middle" class="footer-text">
+      SIGNAL • STABLE • END OF STREAM
+    </text>
+  </g>
+</svg>
