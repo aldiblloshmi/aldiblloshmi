@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00111c"></stop>
+      <stop offset="50%" stop-color="#002a4a"></stop>
+      <stop offset="100%" stop-color="#00111c"></stop>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"></stop>
+      <stop offset="100%" stop-color="#00ffb8"></stop>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .bg-anim {
+      fill: url(#bgGrad);
+      animation: bgShift 12s ease-in-out infinite alternate;
+    }
+
+    .hex {
+      fill: none;
+      stroke: #00e5ff;
+      stroke-width: 1;
+      opacity: 0.18;
+      animation: hexDrift 18s linear infinite;
+    }
+
+    .particle {
+      fill: #00e5ff;
+      opacity: 0.0;
+      animation: particleBlink 4s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) { animation-delay: 0s; }
+    .particle:nth-child(2) { animation-delay: 0.7s; }
+    .particle:nth-child(3) { animation-delay: 1.4s; }
+    .particle:nth-child(4) { animation-delay: 2.1s; }
+    .particle:nth-child(5) { animation-delay: 2.8s; }
+    .particle:nth-child(6) { animation-delay: 3.5s; }
+
+    .title-main {
+      fill: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 46px;
+      letter-spacing: 2px;
+    }
+
+    .title-glitch {
+      fill: url(#neon);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 46px;
+      letter-spacing: 2px;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      animation: glitch 1.7s infinite;
+    }
+
+    .subtitle {
+      fill: #c9f9ff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    @keyframes bgShift {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-40px); }
+      100% { transform: translateX(20px); }
+    }
+
+    @keyframes hexDrift {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-40px, -20px); }
+      100% { transform: translate(10px, -40px); }
+    }
+
+    @keyframes particleBlink {
+      0%, 100% { opacity: 0; transform: translateY(0); }
+      50% { opacity: 1; transform: translateY(-10px); }
+    }
+
+    @keyframes glitch {
+      0%, 100% { transform: translate(0,0); }
+      20% { transform: translate(2px,-1px); }
+      40% { transform: translate(-2px,1px); }
+      60% { transform: translate(1px,0); }
+      80% { transform: translate(-1px,-1px); }
+    }
+  </style>
+
+  <!-- background -->
+  <rect class="bg-anim" x="0" y="0" width="1200" height="320"></rect>
+
+  <!-- hex grid (a few big hexes, enough for vibe) -->
+  <g filter="url(#softGlow)">
+    <polygon class="hex" points="200,40 260,70 260,130 200,160 140,130 140,70"></polygon>
+    <polygon class="hex" points="420,120 480,150 480,210 420,240 360,210 360,150"></polygon>
+    <polygon class="hex" points="760,60 820,90 820,150 760,180 700,150 700,90"></polygon>
+    <polygon class="hex" points="980,140 1040,170 1040,230 980,260 920,230 920,170"></polygon>
+  </g>
+
+  <!-- particles -->
+  <g filter="url(#softGlow)">
+    <circle class="particle" cx="150" cy="230" r="3"></circle>
+    <circle class="particle" cx="330" cy="90" r="2"></circle>
+    <circle class="particle" cx="580" cy="180" r="3"></circle>
+    <circle class="particle" cx="760" cy="230" r="2"></circle>
+    <circle class="particle" cx="960" cy="80" r="3"></circle>
+    <circle class="particle" cx="1080" cy="200" r="2"></circle>
+  </g>
+
+  <!-- title -->
+  <g filter="url(#softGlow)">
+    <text x="50%" y="165" text-anchor="middle" class="title-main">
+      Aldi Blloshmi
+    </text>
+    <text x="50%" y="165" text-anchor="middle" class="title-glitch">
+      Aldi Blloshmi
+    <!--
+--></text></g></svg>
