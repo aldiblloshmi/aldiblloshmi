@@ -1,44 +1,70 @@
-<!-- Animated Background Banner -->
+<!-- HEADER: animated banner -->
 <p align="center">
-  <img src="https://aoble.net/wp-content/uploads/2021/04/aoble_logo_new.png" width="30%" />
+  <img src="./banner.svg" width="100%" alt="Aldi Blloshmi — High-Tech Banner" />
 </p>
 
-<h1 align="center">Aldi Blloshmi</h1>
-<p align="center">High-Tech Developer • Builder • Creator</p>
+<br>
 
----
+<!-- MAIN IDENTITY -->
+<div align="center">
 
-## ⚡ About Me
+  <img src="https://img.shields.io/badge/STATUS-ONLINE-00e5ff?style=for-the-badge&labelColor=050816&color=00e5ff" />
+  <img src="https://img.shields.io/badge/MODE-BUILDER-00e5ff?style=for-the-badge&labelColor=050816&color=00e5ff" />
+  <img src="https://img.shields.io/badge/STACK-HIGH%20TECH-00e5ff?style=for-the-badge&labelColor=050816&color=00e5ff" />
 
-I build clean, efficient and modern software with a minimal, futuristic style.  
-Focused on backend systems, automation, and problem-solving.
+</div>
 
-- ⚙ Backend, APIs, automation  
-- 🧠 Clean architecture & simplicity  
-- 🚀 Long-term builder  
-- 🌐 Website → https://aoble.net  
-- 📬 Email → aldi@aoble.net  
+<br>
 
----
-
-## 🔥 Tech Stack
-
+<!-- SYSTEM BLOCK -->
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,python,php,nodejs,react,nextjs" height="50"/>
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,linux,cloudflare,git,github,mysql,postgres,vscode" height="50"/>
+  <samp>
+    &gt; initializing system...<br>
+    &gt; loading profile: <b>aldiblloshmi</b><br>
+    &gt; mode: backend / automation / high-tech ui<br>
+    &gt; source: <a href="https://aoble.net">aoble.net</a><br>
+    &gt; contact: <a href="mailto:aldi@aoble.net">aldi@aoble.net</a>
+  </samp>
 </p>
 
 ---
 
-## 🚀 Custom Developer Stats (Animated)
+<!-- TECH GRID -->
+<h3 align="center">[ STACK / TOOLING ]</h3>
 
 <p align="center">
-  <img src="./stats-panel.svg" width="80%" />
+  <img src="https://skillicons.dev/icons?i=js,ts,python,php,nodejs,react,nextjs" height="48" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,linux,cloudflare,git,github,mysql,postgres,vscode" height="48" />
 </p>
 
 ---
 
-<p align="center">✨ Thanks for visiting my profile! ✨</p>
+<!-- CUSTOM STATS PANEL (ANIMATED SVG AS IMAGE) -->
+<h3 align="center">[ OPERATION METRICS ]</h3>
+
+<p align="center">
+  <img src="./stats.svg" width="80%" alt="Developer Stats" />
+</p>
+
+---
+
+<!-- LOW NOISE DESCRIPTION -->
+<details>
+  <summary><b>[ EXPAND SYSTEM LOG ]</b></summary>
+  <br>
+  <samp>
+    &gt; focus: backend systems, apis, infra, automation <br>
+    &gt; preference: clean architecture, minimal ui, maximum function <br>
+    &gt; philosophy: build useful things, ship often, keep it sharp <br>
+    &gt; location: /dev/net/aoble <br>
+  </samp>
+</details>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SIGNAL-STABLE-00e5ff?style=flat-square&labelColor=050816&color=00e5ff" />
+</p>
